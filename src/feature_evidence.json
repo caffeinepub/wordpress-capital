@@ -1,0 +1,99 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-one-page-marketing-website-for-the-business-name-wordpress-capital-with-clear-sectioning-and-smooth-in-page-navigation",
+      "featureTitle": "Create a responsive one-page marketing website for the business name \"WordPress Capital\" with clear sectioning and smooth in-page navigation.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/src/main.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-services-section-that-lists-and-groups-the-provided-offerings-exactly-wordpress-development-including-theme-creation-customisation-and-plugin-development-woocommerce-development-shopify-development-reactjs-vue-js-and-hosting-solutions",
+      "featureTitle": "Add a Services section that lists and groups the provided offerings exactly: WordPress Development (including Theme creation/customisation and Plugin development), WooCommerce Development, Shopify Development, ReactJS / Vue JS, and Hosting solutions.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-include-a-hero-section-featuring-the-business-name-wordpress-capital-and-a-concise-tagline-describing-web-development-and-e-commerce-solutions-in-english",
+      "featureTitle": "Include a Hero section featuring the business name \"WordPress Capital\" and a concise tagline describing web development and e-commerce solutions (in English).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-creative-coherent-visual-theme-colors-typography-spacing-and-component-styling-consistently-across-the-one-page-site",
+      "featureTitle": "Apply a creative, coherent visual theme (colors, typography, spacing, and component styling) consistently across the one-page site.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-generated-image-assets-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-render-them-in-the-page-logo-and-hero-visual",
+      "featureTitle": "Add the generated image assets to the frontend as static files under `frontend/public/assets/generated` and render them in the page (logo and hero visual).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

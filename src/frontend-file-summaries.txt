@@ -1,0 +1,9 @@
+{
+  "frontend/src/App.tsx": "Complete one-page website for WordPress Capital with sticky header navigation, hero section with generated assets, services grid showcasing all offerings, about section, contact CTA, and footer with attribution.",
+  "frontend/src/index.css": "Global styles with custom OKLCH color system using teal/emerald primary palette with warm neutrals, smooth scrolling behavior, and responsive typography scales.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Inter font family and custom design tokens matching the teal/emerald color scheme.",
+  "frontend/src/components/ui/button.tsx": "Reusable Button component from shadcn/ui with multiple variants (default, outline, ghost, etc.) and sizes.",
+  "frontend/src/components/ui/card.tsx": "Reusable Card component from shadcn/ui with header, content, footer, title, and description subcomponents for service display.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for React Query hooks (no backend data fetching needed for this static site)."
+}

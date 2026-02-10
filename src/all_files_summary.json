@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods.",
+  "feature_evidence.json": "JSON report mapping implemented features to related frontend files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing key frontend files and components.",
+  "frontend/index.css": "Tailwind base stylesheet defining a full OKLCH variable palette and dark mode values.",
+  "frontend/index.html": "Minimal HTML shell mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React component implementing the full one‑page site with navigation, hero, services, and UI logic.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and managing an authenticated or anonymous backend actor via React Query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and hooks for managing Internet Identity auth, login state, and persistence.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file exporting nothing.",
+  "frontend/src/index.css": "Custom global Tailwind styles defining the teal/emerald theme, typography, and scrolling behavior.",
+  "frontend/src/lib/utils.ts": "Utility to merge class names using clsx and tailwind-merge.",
+  "frontend/src/main.tsx": "React entry point setting up providers and rendering App.",
+  "frontend/tailwind.config.js": "Configures TailwindCSS with dark mode, content paths, extended theme colors, typography, animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Stores the project’s metadata, feature list, image requirements, and pending requests for the WordPress Capital one‑page website."
+}

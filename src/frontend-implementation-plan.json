@@ -1,0 +1,126 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "One-page marketing site for WordPress Capital",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive single-page layout with clearly separated sections and smooth in-page anchor navigation.",
+      "acceptanceCriteria": [
+        "Landing page renders as a single page with multiple sections (no required multi-page routing).",
+        "Top navigation includes anchor links that scroll to sections on the same page.",
+        "Layout is responsive and readable on mobile, tablet, and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the one-page layout component with a sticky header navigation (anchor links to in-page section IDs), multiple sections (e.g., Hero, Services, About/Why, Contact), and responsive structure (mobile-first Tailwind classes)."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Ensure the app renders the one-page App component and that global styles are imported for smooth scrolling and responsive typography (keep existing providers intact)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles to support smooth in-page navigation (e.g., scroll behavior, anchor offset for sticky header), consistent typography defaults, and responsive spacing primitives."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a Services section that lists and groups the provided offerings exactly, including WordPress Development sub-items.",
+      "acceptanceCriteria": [
+        "Services are displayed with clear headings and short supporting bullet points for the two WordPress Development sub-items.",
+        "All services provided by the user appear on the page with correct spelling/capitalization as provided (including \"ReactJS / Vue JS\" and \"Hosting solutions\").",
+        "Services section is visually scannable (e.g., cards or columns) and remains usable on small screens."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement the Services section (with id=\"services\") listing exactly: WordPress Development (with bullet sub-items \"Theme creation/customisation\" and \"Plugin development\"), WooCommerce Development, Shopify Development, ReactJS / Vue JS, Hosting solutions; render in a scannable responsive grid using UI card styling. If using shadcn-ui Card component, verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/ui/card.tsx",
+          "operation": "create",
+          "description": "Add a reusable Card UI component (shadcn-ui style) to support scannable service group presentation; Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create a Hero section with business name, English tagline aligned to services, and a CTA that scrolls to Services.",
+      "acceptanceCriteria": [
+        "Hero prominently displays \"WordPress Capital\".",
+        "Tagline is in English and aligns with the listed services (WordPress/WooCommerce/Shopify/React/Vue/Hosting).",
+        "Hero includes at least one clear call-to-action button that scrolls to the Services section."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a Hero section at the top featuring \"WordPress Capital\", an English tagline aligned with the service list, a CTA button linking to #services, and a hero illustration area that will render the generated hero image. If using shadcn-ui Button component, verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/ui/button.tsx",
+          "operation": "create",
+          "description": "Add a reusable Button UI component (shadcn-ui style) for the primary CTA and consistent button styling across the page; Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Apply a creative, coherent visual theme (non-blue/purple primary palette) consistently across the site.",
+      "acceptanceCriteria": [
+        "A consistent design system is evident across sections (buttons, headings, cards, spacing).",
+        "Theme avoids default/unstyled template appearance and does not rely on blue/purple as the primary palette."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define a cohesive theme via CSS variables and global typography/spacing defaults (e.g., warm neutrals + green/teal accent as primary, avoiding blue/purple); ensure consistent heading scales and component surfaces."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust Tailwind theme extensions if needed to support the site’s design system (e.g., additional semantic colors, radii, shadows) while keeping styling consistent across components/sections."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the theme consistently across header, hero, services cards, and other sections (consistent spacing, section backgrounds, button hierarchy, and typography) to avoid a default/unstyled appearance."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add the generated logo and hero illustration as static assets and render them in the header and hero without distortion or layout shift.",
+      "acceptanceCriteria": [
+        "Generated images exist under `frontend/public/assets/generated` and are referenced directly by the frontend (not served via backend).",
+        "Logo image is displayed in the header/navigation area.",
+        "Hero image/illustration is displayed in the hero section without layout shift or distortion."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/wp-capital-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated logo asset as a static file at frontend/public/assets/generated/wp-capital-logo.dim_512x512.png."
+        },
+        {
+          "path": "frontend/public/assets/generated/wp-capital-hero-illustration.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated hero illustration asset as a static file at frontend/public/assets/generated/wp-capital-hero-illustration.dim_1600x900.png."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the logo image from frontend/public/assets/generated/wp-capital-logo.dim_512x512.png in the header/nav and the hero illustration from frontend/public/assets/generated/wp-capital-hero-illustration.dim_1600x900.png in the Hero section; ensure images use fixed dimensions/aspect-ratio-friendly layout to avoid distortion and layout shift."
+        }
+      ]
+    }
+  ]
+}

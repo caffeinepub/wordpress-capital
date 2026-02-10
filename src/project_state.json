@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "One-page business website for WordPress Capital showcasing services (WordPress, WooCommerce, Shopify, React/Vue, hosting).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Minimal modern logo mark with the text \"WordPress Capital\" (wp-capital-logo.dim_512x512.png)\n- Abstract web development hero illustration (laptop/browser/code/e-commerce motif) (wp-capital-hero-illustration.dim_1600x900.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-one-page-marketing-website-for-the-business-name-wordpress-capital-with-clear-sectioning-and-smooth-in-page-navigation",
+      "title": "Create a responsive one-page marketing website for the business name \"WordPress Capital\" with clear sectioning and smooth in-page navigation.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-services-section-that-lists-and-groups-the-provided-offerings-exactly-wordpress-development-including-theme-creation-customisation-and-plugin-development-woocommerce-development-shopify-development-reactjs-vue-js-and-hosting-solutions",
+      "title": "Add a Services section that lists and groups the provided offerings exactly: WordPress Development (including Theme creation/customisation and Plugin development), WooCommerce Development, Shopify Development, ReactJS / Vue JS, and Hosting solutions.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-include-a-hero-section-featuring-the-business-name-wordpress-capital-and-a-concise-tagline-describing-web-development-and-e-commerce-solutions-in-english",
+      "title": "Include a Hero section featuring the business name \"WordPress Capital\" and a concise tagline describing web development and e-commerce solutions (in English).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-creative-coherent-visual-theme-colors-typography-spacing-and-component-styling-consistently-across-the-one-page-site",
+      "title": "Apply a creative, coherent visual theme (colors, typography, spacing, and component styling) consistently across the one-page site.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-generated-image-assets-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-render-them-in-the-page-logo-and-hero-visual",
+      "title": "Add the generated image assets to the frontend as static files under `frontend/public/assets/generated` and render them in the page (logo and hero visual).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a one-page website for the business \"WordPress Capital\" listing services (WordPress theme customization, plugin development, WooCommerce, Shopify, React/Vue, hosting solutions).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "WordPress Capital",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

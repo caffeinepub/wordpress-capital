@@ -1,0 +1,106 @@
+{
+  "kind": "build_request",
+  "title": "One-page business website for WordPress Capital",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive one-page marketing website for the business name \"WordPress Capital\" with clear sectioning and smooth in-page navigation.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "I want to cerate a one page website for my business, Imy business name is WordPress Capital"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page renders as a single page with multiple sections (no required multi-page routing).",
+        "Top navigation includes anchor links that scroll to sections on the same page.",
+        "Layout is responsive and readable on mobile, tablet, and desktop."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a Services section that lists and groups the provided offerings exactly: WordPress Development (including Theme creation/customisation and Plugin development), WooCommerce Development, Shopify Development, ReactJS / Vue JS, and Hosting solutions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "i provided services like \nWordPress Development \n- Theme creation/customisation\n- Plugin development\nWooCommerce Development\nShopify Development\nReactJS / Vue JS \nHosting solutions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Services are displayed with clear headings and short supporting bullet points for the two WordPress Development sub-items.",
+        "All services provided by the user appear on the page with correct spelling/capitalization as provided (including \"ReactJS / Vue JS\" and \"Hosting solutions\").",
+        "Services section is visually scannable (e.g., cards or columns) and remains usable on small screens."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Include a Hero section featuring the business name \"WordPress Capital\" and a concise tagline describing web development and e-commerce solutions (in English).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "business name is WordPress Capital"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero prominently displays \"WordPress Capital\".",
+        "Tagline is in English and aligns with the listed services (WordPress/WooCommerce/Shopify/React/Vue/Hosting).",
+        "Hero includes at least one clear call-to-action button that scrolls to the Services section."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Apply a creative, coherent visual theme (colors, typography, spacing, and component styling) consistently across the one-page site.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A consistent design system is evident across sections (buttons, headings, cards, spacing).",
+        "Theme avoids default/unstyled template appearance and does not rely on blue/purple as the primary palette."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add the generated image assets to the frontend as static files under `frontend/public/assets/generated` and render them in the page (logo and hero visual).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under `frontend/public/assets/generated` and are referenced directly by the frontend (not served via backend).",
+        "Logo image is displayed in the header/navigation area.",
+        "Hero image/illustration is displayed in the hero section without layout shift or distortion."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not require or depend on any external database or third-party services for core site functionality.",
+    "Do not modify any files under the immutable frontend paths listed in SYSTEM_CONTEXT; compose those components/hooks as-is if needed."
+  ],
+  "nonGoals": [
+    "Implementing a CMS, blog, or multi-page site.",
+    "Implementing third-party authentication (only Internet Identity is supported, and it is not required for this one-page site).",
+    "Implementing email delivery or integrations (e.g., SendGrid/Mailgun/SMTP) for contact forms."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimal modern logo mark with the text \"WordPress Capital\" (wp-capital-logo.dim_512x512.png)",
+      "Abstract web development hero illustration (laptop/browser/code/e-commerce motif) (wp-capital-hero-illustration.dim_1600x900.png)"
+    ],
+    "edits": []
+  }
+}

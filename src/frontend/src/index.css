@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Warm professional palette - Teal/Emerald primary with warm neutrals */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0.01 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.01 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.01 240;
+        
+        /* Teal/Emerald primary - professional and modern */
+        --primary: 0.55 0.14 180;
+        --primary-foreground: 0.99 0 0;
+        
+        --secondary: 0.96 0.01 60;
+        --secondary-foreground: 0.15 0.01 240;
+        
+        --muted: 0.96 0.01 60;
+        --muted-foreground: 0.50 0.02 240;
+        
+        /* Warm accent - amber/orange */
+        --accent: 0.75 0.12 60;
+        --accent-foreground: 0.15 0.01 240;
+        
+        --destructive: 0.58 0.24 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.92 0.01 240;
+        --input: 0.92 0.01 240;
+        --ring: 0.55 0.14 180;
+        
+        --chart-1: 0.55 0.14 180;
+        --chart-2: 0.65 0.16 150;
+        --chart-3: 0.75 0.12 60;
+        --chart-4: 0.45 0.12 210;
+        --chart-5: 0.70 0.18 120;
+    }
+
+    .dark {
+        --background: 0.12 0.01 240;
+        --foreground: 0.98 0.01 60;
+        
+        --card: 0.16 0.01 240;
+        --card-foreground: 0.98 0.01 60;
+        
+        --popover: 0.14 0.01 240;
+        --popover-foreground: 0.98 0.01 60;
+        
+        /* Brighter teal for dark mode */
+        --primary: 0.65 0.16 180;
+        --primary-foreground: 0.12 0.01 240;
+        
+        --secondary: 0.20 0.02 240;
+        --secondary-foreground: 0.98 0.01 60;
+        
+        --muted: 0.20 0.02 240;
+        --muted-foreground: 0.65 0.02 240;
+        
+        --accent: 0.80 0.14 60;
+        --accent-foreground: 0.12 0.01 240;
+        
+        --destructive: 0.65 0.22 25;
+        --destructive-foreground: 0.98 0.01 60;
+        
+        --border: 0.25 0.02 240;
+        --input: 0.25 0.02 240;
+        --ring: 0.65 0.16 180;
+        
+        --chart-1: 0.65 0.16 180;
+        --chart-2: 0.70 0.18 150;
+        --chart-3: 0.80 0.14 60;
+        --chart-4: 0.55 0.14 210;
+        --chart-5: 0.75 0.20 120;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Smooth scroll offset for fixed header */
+    section {
+        scroll-margin-top: 5rem;
+    }
+}
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold tracking-tight;
+    }
+    
+    h1 {
+        @apply text-4xl sm:text-5xl lg:text-6xl;
+    }
+    
+    h2 {
+        @apply text-3xl sm:text-4xl lg:text-5xl;
+    }
+    
+    h3 {
+        @apply text-2xl sm:text-3xl;
+    }
+    
+    h4 {
+        @apply text-xl sm:text-2xl;
+    }
+}
